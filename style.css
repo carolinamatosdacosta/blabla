@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
     background-color: #000;
     color: #fff;
     display: flex;
@@ -20,29 +20,37 @@ body {
     text-align: center;
 }
 
-h1 {
+.typing {
+    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
     font-size: 2em;
     color: white;
     margin-bottom: 20px;
+    width: 20em;
+    margin: 0 auto;
+    border-right: 3px solid;
     opacity: 0;
-    animation: slideIn 1s forwards;
+    animation: typing 2s steps(20) 1s forwards, blinkCaret 0.75s step-end infinite;
 }
 
-/* Animação de deslize */
-@keyframes slideIn {
+/* Animação de digitação */
+@keyframes typing {
     from {
-        transform: translateY(-50px);
-        opacity: 0;
+        width: 0;
     }
     to {
-        transform: translateY(0);
-        opacity: 1;
+        width: 20em;
     }
 }
 
-/* Estilo para as seções */
+@keyframes blinkCaret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Animação de deslize para o conteúdo */
 .content {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 section {
@@ -53,7 +61,7 @@ section {
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
     opacity: 0;
-    animation: fadeIn 1s forwards 0.5s;
+    animation: fadeIn 1s forwards 1s, slideIn 1s forwards 1s;
 }
 
 section:hover {
@@ -61,11 +69,13 @@ section:hover {
 }
 
 h2 {
+    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
     font-size: 1.3em;
     margin-bottom: 10px;
 }
 
 p {
+    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
     font-size: 1em;
 }
 
@@ -75,6 +85,18 @@ p {
         opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+
+/* Animação de deslize para as seções */
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
         opacity: 1;
     }
 }
