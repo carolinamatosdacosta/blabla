@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
-    background-color: #000;
+    background-color: #1b1b1b5b;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -69,9 +69,9 @@ section:hover {
 }
 
 h2 {
-    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
-    font-size: 1.3em;
-    margin-bottom: 10px;
+    font-family: 'Especial Elite', monospace;  /* Alterado para Courier, monospace */
+    font-size: 3em;
+    margin: 0 auto;
 }
 
 p {
