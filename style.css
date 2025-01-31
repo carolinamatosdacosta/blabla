@@ -20,35 +20,29 @@ body {
     text-align: center;
 }
 
-.typing {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #00ff00;
-    border-right: 3px solid;
-    width: fit-content;
-    margin: 0 auto;
-    animation: typing 2s steps(20) 1s forwards, blinkCaret 0.75s step-end infinite;
+h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1s forwards;
 }
 
-/* Animação de digitação */
-@keyframes typing {
+/* Animação de deslize */
+@keyframes slideIn {
     from {
-        width: 0;
+        transform: translateY(-50px);
+        opacity: 0;
     }
     to {
-        width: 15em;
-    }
-}
-
-@keyframes blinkCaret {
-    50% {
-        border-color: transparent;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 /* Estilo para as seções */
 .content {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 section {
@@ -58,6 +52,8 @@ section {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
 }
 
 section:hover {
@@ -65,10 +61,20 @@ section:hover {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
+}
+
+/* Animação de fade-in para as seções */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
