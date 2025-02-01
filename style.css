@@ -40,6 +40,7 @@ header {
 
 /* Nome/Nick à esquerda */
 .logo {
+  font-family: 'Tangerine', serif;
   font-size: 22px;
   font-weight: bold;
   color: white;
