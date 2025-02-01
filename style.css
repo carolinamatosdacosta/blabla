@@ -15,8 +15,8 @@ body {
 .line {
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     color: rgba(243, 241, 243, 0.75);
-    font-family: 'Montserrat';
-    font-size: 3em;
+    font-family: 'Courier', monospace;
+    font-size: 1em;
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
