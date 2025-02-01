@@ -9,12 +9,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #000000;
+    background-color: rgb(25, 25, 25);
 }
 
 .line {
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    color: rgba(175, 93, 171, 0.75);
+    color: rgba(243, 241, 243, 0.75);
     font-family: 'Montserrat';
     font-size: 3em;
     margin: 0 auto;
