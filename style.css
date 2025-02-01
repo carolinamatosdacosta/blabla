@@ -102,7 +102,6 @@ header {
   50% { border-color: white }
 }
 
-/* Fontes e Reset */
 /* Geral */
 body, h1, h2, p, ul {
   margin: 0;
@@ -196,3 +195,35 @@ header {
 
 .skills ul {
   list-style-type: none;
+}
+
+.skills li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #E8A4E5;
+}
+
+/* Extra Info */
+.extra-info {
+  margin-top: 30px;
+}
+
+.extra-info h2 {
+  font-size: 2rem;
+  color: #F1C6F2;
+  margin-bottom: 15px;
+}
+
+.extra-info p {
+  font-size: 1.2rem;
+  color: #E8A4E5;
+}
+
+/* Efeitos e Decoração */
+h1, h2 {
+  transition: transform 0.3s ease;
+}
+
+h1:hover, h2:hover {
+  transform: translateY(-5px);
+}
