@@ -7,28 +7,27 @@
 body {
   background-color: #5F2C8F; /* Roxo moderno */
   color: #fff;
-  font-family: 'Poppins', sans-serif;
-  padding-top: 60px; /* Para evitar que a navbar sobreponha o conteúdo */
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh; /* Para garantir que ocupe toda a tela */
-}
-
-/* Estilização da navbar */
-header {
-  position: fixed; /* Deixa a navbar fixa no topo */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #6A2E9C; /* Roxo mais claro */
-  padding: 20px 0;
-  z-index: 1000;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #6A2E9C;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -38,19 +37,16 @@ header {
   padding: 0 20px;
 }
 
-/* Nome/Nick à esquerda */
 .logo {
-  font-family: 'Oswald', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #F1C6F2;
 }
 
-/* Links de navegação */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .nav-links li {
@@ -58,97 +54,40 @@ header {
 }
 
 .nav-links a {
-  font-family: 'Courier', monospace;
   text-decoration: none;
   color: #F1C6F2;
-  font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #A259FF; /* Cor roxa ao passar o mouse */
+  color: #fff;
 }
 
-/* Efeitos de hover */
-h1, h2 {
-  transition: transform 0.3s ease;
+/* Main Content */
+.main-content {
+  margin-top: 100px; /* Para não sobrepor com a navbar fixa */
 }
 
-h1:hover, h2:hover {
-  transform: translateY(-5px);
-}
-
-/* Seção principal */
-.sobre {
-  background-color: #481A7C; /* Roxo escuro */
-  padding: 40px;
-  margin: 80px auto;
-  border-radius: 15px;
-  width: 90%;
-  max-width: 800px;
-}
-
-.intro h1 {
+.main-content h1 {
   font-size: 2.5rem;
   color: #F1C6F2;
   letter-spacing: 2px;
-  margin-bottom: 10px;
 }
 
-.intro p {
-  font-size: 1.2rem;
-  color: #E8A4E5;
-  line-height: 1.5;
-}
-
-.skills h2, .extra-info h2 {
-  font-size: 2rem;
-  color: #F1C6F2;
-  margin-bottom: 15px;
-}
-
-.skills ul, .extra-info p {
-  font-size: 1.2rem;
-  color: #E8A4E5;
-  line-height: 1.6;
-}
-
-.skills ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
-.skills li {
-  margin-bottom: 10px;
-}
-
-/* Animação da digitação */
-.typewriter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-  width: 100%;
-}
-
-.typewriter h1 {
-  color: rgb(251, 249, 253);
-  font-family: 'Courier', monospace;
-  overflow: hidden;
-  border-right: 3px solid rgb(230, 228, 225);
-  white-space: nowrap;
-  letter-spacing: 3px;
-  max-width: 19ch;
-  animation: typing 3s steps(18), blink-caret 0.5s step-end infinite;
-}
-
+/* Animação de digitação (opcional) */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 18ch; }
+  from { width: 0; }
+  to { width: 12ch; }
+}
+
+.main-content h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #F1C6F2;
+  animation: typing 3s steps(12), blink-caret 0.5s step-end infinite;
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
+  50% { border-color: transparent; }
 }
