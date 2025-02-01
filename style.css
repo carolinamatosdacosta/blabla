@@ -10,6 +10,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   padding-top: 60px; /* Evita que a navbar sobreponha o conteúdo */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa toda a tela */
 }
 
 /* Estilização da navbar */
@@ -20,7 +25,7 @@ header {
   width: 100%;
   background-color: #222;
   padding: 15px 0;
-  z-index: 1000; /* Mantém a navbar acima do conteúdo */
+  z-index: 1000;
 }
 
 /* Estilização da barra de navegação */
@@ -63,9 +68,13 @@ header {
   color: #A259FF; /* Cor roxa ao passar o mouse */
 }
 
-/* Efeito de digitação */
+/* Centralizar e corrigir erro do texto cortado */
 .typewriter {
-  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* Deixa no meio da tela */
+  width: 100%;
 }
 
 .typewriter h1 {
@@ -75,14 +84,14 @@ header {
   border-right: 3px solid rgb(230, 228, 225);
   white-space: nowrap;
   letter-spacing: 3px;
-  width: 14ch;
-  animation: typing 3s steps(14, end), blink-caret 0.5s step-end infinite;
+  max-width: 18ch; /* Ajustado para caber todo o texto */
+  animation: typing 3s steps(18), blink-caret 0.5s step-end infinite;
 }
 
 /* Animação de digitação */
 @keyframes typing {
   from { width: 0 }
-  to { width: 14ch }
+  to { width: 18ch; }
 }
 
 /* Animação do cursor piscando */
