@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
-body { 
-  background-color: rgb(25, 25, 25);
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 60px; /* Evita que a navbar sobreponha o conteúdo */
+body {
+  background-color: #5F2C8F; /* Roxo moderno */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 60px; /* Para evitar que a navbar sobreponha o conteúdo */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh; /* Ocupa toda a tela */
+  justify-content: flex-start;
+  min-height: 100vh; /* Para garantir que ocupe toda a tela */
 }
 
 /* Estilização da navbar */
@@ -23,12 +23,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #222;
-  padding: 15px 0;
+  background-color: #6A2E9C; /* Roxo mais claro */
+  padding: 20px 0;
   z-index: 1000;
 }
 
-/* Estilização da barra de navegação */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -40,10 +40,10 @@ header {
 
 /* Nome/Nick à esquerda */
 .logo {
-  font-family: "Oswald", serif;
-  font-size: 22px;
+  font-family: 'Oswald', serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: #F1C6F2;
 }
 
 /* Links de navegação */
@@ -60,8 +60,8 @@ header {
 .nav-links a {
   font-family: 'Courier', monospace;
   text-decoration: none;
-  color: white;
-  font-size: 18px;
+  color: #F1C6F2;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -70,12 +70,65 @@ header {
   color: #A259FF; /* Cor roxa ao passar o mouse */
 }
 
-/* Centralizar e corrigir erro do texto cortado */
+/* Efeitos de hover */
+h1, h2 {
+  transition: transform 0.3s ease;
+}
+
+h1:hover, h2:hover {
+  transform: translateY(-5px);
+}
+
+/* Seção principal */
+.sobre {
+  background-color: #481A7C; /* Roxo escuro */
+  padding: 40px;
+  margin: 80px auto;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #F1C6F2;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #E8A4E5;
+  line-height: 1.5;
+}
+
+.skills h2, .extra-info h2 {
+  font-size: 2rem;
+  color: #F1C6F2;
+  margin-bottom: 15px;
+}
+
+.skills ul, .extra-info p {
+  font-size: 1.2rem;
+  color: #E8A4E5;
+  line-height: 1.6;
+}
+
+.skills ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
+/* Animação da digitação */
 .typewriter {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh; /* Deixa no meio da tela */
+  height: 50vh;
   width: 100%;
 }
 
@@ -86,144 +139,16 @@ header {
   border-right: 3px solid rgb(230, 228, 225);
   white-space: nowrap;
   letter-spacing: 3px;
-  max-width: 19ch; /* Ajustado para caber todo o texto */
+  max-width: 19ch;
   animation: typing 3s steps(18), blink-caret 0.5s step-end infinite;
 }
 
-/* Animação de digitação */
 @keyframes typing {
   from { width: 0 }
   to { width: 18ch; }
 }
 
-/* Animação do cursor piscando */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white }
-}
-
-/* Geral */
-body, h1, h2, p, ul {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background-color: #5F2C8F; /* Roxo moderno */
-  color: #fff;
-  line-height: 1.6;
-}
-
-h1, h2 {
-  color: #fff;
-}
-
-/* Header */
-header {
-  background-color: #6A2E9C;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.navbar .logo {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #F1C6F2;
-}
-
-.nav-links {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #F1C6F2;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #fff;
-}
-
-/* Main content */
-.sobre {
-  padding: 40px;
-  background-color: #481A7C; /* Roxo escuro */
-  border-radius: 15px;
-  margin: 40px auto;
-  width: 80%;
-  max-width: 800px;
-}
-
-/* Sections */
-.intro {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.intro h1 {
-  font-size: 2.5rem;
-  color: #F1C6F2;
-  letter-spacing: 2px;
-}
-
-.intro p {
-  font-size: 1.2rem;
-  color: #E8A4E5;
-}
-
-/* Skills */
-.skills {
-  margin-bottom: 30px;
-}
-
-.skills h2 {
-  font-size: 2rem;
-  color: #F1C6F2;
-  margin-bottom: 15px;
-}
-
-.skills ul {
-  list-style-type: none;
-}
-
-.skills li {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #E8A4E5;
-}
-
-/* Extra Info */
-.extra-info {
-  margin-top: 30px;
-}
-
-.extra-info h2 {
-  font-size: 2rem;
-  color: #F1C6F2;
-  margin-bottom: 15px;
-}
-
-.extra-info p {
-  font-size: 1.2rem;
-  color: #E8A4E5;
-}
-
-/* Efeitos e Decoração */
-h1, h2 {
-  transition: transform 0.3s ease;
-}
-
-h1:hover, h2:hover {
-  transform: translateY(-5px);
 }
