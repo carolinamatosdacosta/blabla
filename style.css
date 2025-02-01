@@ -91,3 +91,93 @@ header {
 @keyframes blink-caret {
   50% { border-color: transparent; }
 }
+
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5F2C8F; /* Roxo moderno */
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 80px; /* Ajuste para espaçar a navbar fixa */
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #6A2E9C;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F1C6F2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F1C6F2;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Seção sobre */
+.about {
+  margin-top: 100px; /* Para evitar que sobreponha o conteúdo */
+  padding: 40px;
+  background-color: #481A7C; /* Roxo escuro */
+  border-radius: 15px;
+  width: 80%;
+  max-width: 900px;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  color: #F1C6F2;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #E8A4E5;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
