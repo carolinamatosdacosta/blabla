@@ -1,102 +1,54 @@
-/* Resetando margens e preenchimentos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
-    background:  rgba (25, 25, 25);
-    color: #fff;
+body { 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    background-color: #000000;
 }
 
-.container {
-    text-align: center;
-}
-
-.typing {
-    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
-    font-size: 2em;
-    color: white;
-    margin-bottom: 20px;
-    width: 20em;
-    margin: 0 auto;
-    border-right: 3px solid;
-    opacity: 0;
-    animation: typing 2s steps(20) 1s forwards, blinkCaret 0.75s step-end infinite;
-}
-
-/* Animação de digitação */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 20em;
-    }
-}
-
-@keyframes blinkCaret {
-    50% {
-        border-color: transparent;
-    }
-}
-
-/* Animação de deslize para o conteúdo */
-.content {
-    margin-top: 40px;
-}
-
-section {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    background-color: rgba(25, 25, 25,);
-    transition: background-color 0.3s ease;
-    opacity: 0;
-    animation: fadeIn 1s forwards 1s, slideIn 1s forwards 1s;
-}
-
-section:hover {
-    background-color: rgba(25, 25, 25,);
-}
-
-h2 {
-    font-family: 'Especial Elite', monospace;  /* Alterado para Courier, monospace */
+.line {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: rgba(175, 93, 171, 0.75);
+    font-family: 'Montserrat';
     font-size: 3em;
     margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    
 }
 
-p {
-    font-family: 'Courier', monospace;  /* Alterado para Courier, monospace */
-    font-size: 1em;
+.typing-animation { 
+    animation: blinkCursor 1000ms steps(40) infinite normal, 
+    typing 3s steps(40) 1s 3 alternate;
 }
 
-/* Animação de fade-in para as seções */
-@keyframes fadeIn {
+@keyframes typing {
     from {
-        opacity: 0;
+      width: 0; 
     }
     to {
-        opacity: 1;
+        width: 10em;
     }
 }
 
-/* Animação de deslize para as seções */
-@keyframes slideIn {
-    from {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
+@keyframes blinkCursor {
+   from {
+    border-right-color: rgba(255,255,255, 0.75);
+   }
+
+   to {
+    border-right-color: transparent;
+   }
+}
+
+@media (max-width: 500px) {
+    .line {
+        font-size: 2em;
     }
 }
