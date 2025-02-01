@@ -58,14 +58,14 @@ section {
     padding: 15px;
     border: 1px solid #fff;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(25, 25, 25,);
     transition: background-color 0.3s ease;
     opacity: 0;
     animation: fadeIn 1s forwards 1s, slideIn 1s forwards 1s;
 }
 
 section:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(25, 25, 25,);
 }
 
 h2 {
