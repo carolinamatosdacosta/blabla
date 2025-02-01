@@ -103,36 +103,34 @@ header {
 }
 
 /* Fontes e Reset */
-body, h1, h2, h3, p, ul {
+/* Geral */
+body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #2C1A78; /* Cor de fundo roxa */
+  background-color: #5F2C8F; /* Roxo moderno */
   color: #fff;
   line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #F0A7E4; /* Roxo claro */
+h1, h2 {
+  color: #fff;
 }
 
-h2 {
-  margin-bottom: 20px;
-}
-
-/* Estilo do Header */
+/* Header */
 header {
-  background-color: #4C2C94;
+  background-color: #6A2E9C;
   padding: 20px 0;
   text-align: center;
 }
 
 .navbar .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #F1C6F2;
 }
 
 .nav-links {
@@ -148,59 +146,53 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #F0A7E4;
+  color: #F1C6F2;
   font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #fff;
 }
 
-/* Estilo principal da seção sobre */
+/* Main content */
 .sobre {
   padding: 40px;
-  background-color: #3A1D6E; /* Cor de fundo roxa mais escura */
+  background-color: #481A7C; /* Roxo escuro */
   border-radius: 15px;
   margin: 40px auto;
   width: 80%;
-  max-width: 900px;
+  max-width: 800px;
 }
 
-.introducao {
+/* Sections */
+.intro {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.detalles ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.detalles li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-
-.emoji {
-  margin-right: 10px;
-  font-size: 1.4rem;
-}
-
-/* Efeitos de decoração */
-.introducao h2 {
-  text-transform: uppercase;
+.intro h1 {
+  font-size: 2.5rem;
+  color: #F1C6F2;
   letter-spacing: 2px;
-  background: linear-gradient(90deg, #F0A7E4, #3A1D6E);
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
-.extras {
-  margin-top: 20px;
+.intro p {
   font-size: 1.2rem;
-  text-align: center;
+  color: #E8A4E5;
 }
 
-.extras p {
+/* Skills */
+.skills {
+  margin-bottom: 30px;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #F1C6F2;
   margin-bottom: 15px;
 }
+
+.skills ul {
+  list-style-type: none;
