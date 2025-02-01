@@ -20,30 +20,43 @@ body {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
+    width: 10em; /* Tamanho do texto que vai ser digitado */
 }
 
 .typing-animation { 
-    animation: blinkCursor 1000ms steps(40) infinite normal, 
-              typing 3s steps(40) infinite 1s;
+    animation: typing 3s steps(40) infinite, 
+              erase 3s steps(40) infinite 3s, 
+              blinkCursor 0.75s step-end infinite;
 }
 
+/* Animação de digitação */
 @keyframes typing {
     from {
-      width: 0; 
+        width: 0;
     }
     to {
         width: 10em;
     }
 }
 
-@keyframes blinkCursor {
-   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-   }
+/* Animação de apagamento */
+@keyframes erase {
+    from {
+        width: 10em;
+    }
+    to {
+        width: 0;
+    }
+}
 
-   to {
-    border-right-color: transparent;
-   }
+/* Animação do cursor piscando */
+@keyframes blinkCursor {
+    50% {
+        border-right-color: transparent;
+    }
+    100% {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
 }
 
 @media (max-width: 500px) {
