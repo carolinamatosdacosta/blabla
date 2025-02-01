@@ -84,7 +84,7 @@ header {
   border-right: 3px solid rgb(230, 228, 225);
   white-space: nowrap;
   letter-spacing: 3px;
-  max-width: 18ch; /* Ajustado para caber todo o texto */
+  max-width: 15ch; /* Ajustado para caber todo o texto */
   animation: typing 3s steps(18), blink-caret 0.5s step-end infinite;
 }
 
