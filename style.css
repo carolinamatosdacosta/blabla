@@ -31,21 +31,27 @@ body {
 
 /* Animação de digitação */
 @keyframes typing {
-    from {
+    0% {
         width: 0;
     }
-    to {
-        width: 10em;
+    50% {
+        width: 10em; /* Aqui você define o tamanho do texto */
+    }
+    100% {
+        width: 10em; /* Mantém o texto totalmente digitado */
     }
 }
 
 /* Animação de apagamento */
 @keyframes erase {
-    from {
-        width: 10em;
+    0% {
+        width: 10em; /* Texto totalmente digitado */
     }
-    to {
-        width: 0;
+    50% {
+        width: 0; /* Apaga o texto */
+    }
+    100% {
+        width: 0; /* Texto apagado */
     }
 }
 
