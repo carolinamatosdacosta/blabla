@@ -1,92 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: rgb(25, 25, 25);
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 60px; /* Evita que a navbar sobreponha o conteúdo */
+  text-align: center;
 }
 
-.line {
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    color: rgba(243, 241, 243, 0.75);
-    font-family: 'Courier', monospace;
-    font-size: 1em;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 10em; /* Define o tamanho do texto */
-}
-.typewriter h1 {
-    color: rgb(251, 249, 253);
-    font-family: 'Courier', monospace;
-    overflow: hidden;
-    border-right: .15em solid rgb(230, 228, 225); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255) }
-  }
-
-  header {
-    background-color: #222; /* Cor de fundo escura */
-    padding: 15px 20px;
+/* Estilização da navbar */
+header {
+  position: fixed; /* Deixa a navbar fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  padding: 15px 0;
+  z-index: 1000; /* Mantém a navbar acima do conteúdo */
 }
 
 /* Estilização da barra de navegação */
 .navbar {
-    display: flex;
-    justify-content: space-between; /* Deixa o nome à esquerda e os links à direita */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Nome/Nick à esquerda */
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
 }
 
 /* Links de navegação */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li {
-    display: inline;
+  display: inline;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #A259FF; /* Cor roxa ao passar o mouse */
+  color: #A259FF; /* Cor roxa ao passar o mouse */
+}
+
+/* Efeito de digitação */
+.typewriter {
+  margin-top: 50px;
+}
+
+.typewriter h1 {
+  color: rgb(251, 249, 253);
+  font-family: 'Courier', monospace;
+  overflow: hidden;
+  border-right: 3px solid rgb(230, 228, 225);
+  white-space: nowrap;
+  letter-spacing: 3px;
+  width: 14ch;
+  animation: typing 3s steps(14, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 14ch }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
 }
