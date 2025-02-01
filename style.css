@@ -46,3 +46,24 @@ body {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 255, 255) }
   }
+
+.botao-sobre {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-sobre:hover {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+
+.conteudo {
+  margin-top: 20%;
+  font-size: 24px;
+}
