@@ -47,47 +47,46 @@ body {
     50% { border-color: rgb(255, 255, 255) }
   }
 
-/* Estilização do cabeçalho */
-header {
-  background-color: #222; /* Cor de fundo escura */
-  padding: 15px 20px;
+  header {
+    background-color: #222; /* Cor de fundo escura */
+    padding: 15px 20px;
 }
 
 /* Estilização da barra de navegação */
 .navbar {
-  display: flex;
-  justify-content: space-between; /* Deixa o nome à esquerda e os links à direita */
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Deixa o nome à esquerda e os links à direita */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Nome/Nick à esquerda */
 .logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
 }
 
 /* Links de navegação */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links li {
-  display: inline;
+    display: inline;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #A259FF; /* Cor roxa ao passar o mouse */
+    color: #A259FF; /* Cor roxa ao passar o mouse */
 }
