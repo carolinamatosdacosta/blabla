@@ -101,3 +101,106 @@ header {
   from, to { border-color: transparent }
   50% { border-color: white }
 }
+
+/* Fontes e Reset */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #2C1A78; /* Cor de fundo roxa */
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #F0A7E4; /* Roxo claro */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilo do Header */
+header {
+  background-color: #4C2C94;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F0A7E4;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo principal da seção sobre */
+.sobre {
+  padding: 40px;
+  background-color: #3A1D6E; /* Cor de fundo roxa mais escura */
+  border-radius: 15px;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+.introducao {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.detalles ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.detalles li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.emoji {
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
+/* Efeitos de decoração */
+.introducao h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #F0A7E4, #3A1D6E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.extras {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.extras p {
+  margin-bottom: 15px;
+}
