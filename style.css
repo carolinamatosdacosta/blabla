@@ -57,6 +57,7 @@ header {
 }
 
 .nav-links a {
+  font-family: 'Courier', monospace;
   text-decoration: none;
   color: white;
   font-size: 18px;
