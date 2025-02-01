@@ -20,12 +20,11 @@ body {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    
 }
 
 .typing-animation { 
     animation: blinkCursor 1000ms steps(40) infinite normal, 
-    typing 3s steps(40) 1s 3 alternate;
+              typing 3s steps(40) infinite 1s;
 }
 
 @keyframes typing {
@@ -39,7 +38,7 @@ body {
 
 @keyframes blinkCursor {
    from {
-    border-right-color: rgba(255,255,255, 0.75);
+    border-right-color: rgba(255, 255, 255, 0.75);
    }
 
    to {
