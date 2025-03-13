@@ -23,11 +23,24 @@
 
   <section class="hero">
     <div class="container">
-        <h1>Bem-vindo(a) ao meu portfólio</h1>
+        <h1><span class="typing"></span></h1>
         <p>Sou a Cappuh, desenvolvedora e designer, apaixonada por tecnologia e criatividade.</p>
         <a href="projetos.html" class="btn">Veja meus projetos</a>
     </div>
   </section>
+
+  <script>
+    const texto = "Bem-vindo(a) ao meu portfólio";
+    let i = 0;
+    function digitar() {
+        if (i < texto.length) {
+            document.querySelector(".typing").innerHTML += texto.charAt(i);
+            i++;
+            setTimeout(digitar, 100);
+        }
+    }
+    window.onload = digitar;
+  </script>
 
 </body>
 </html>
