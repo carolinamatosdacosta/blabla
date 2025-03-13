@@ -3,30 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Cappuh | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Cappuh</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <nav class="navbar">
-        <div class="logo">Carolina Matos</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-    <section class="hero">
-        <div class="container">
-            <h1><span class="typing"></span></h1>
-            <p>Sou Cappuh, desenvolvedora e designer, faço tecnologia e criatividade.</p>
-            <a href="projetos.html" class="btn">Veja meus projetos</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, sou Cappuh!</h1>
+            <p>Desenvolvedora e Designer apaixonada por criar experiências digitais incríveis.</p>
+            <a href="#projects" class="btn">Meus Projetos</a>
         </div>
     </section>
-  </body>
-  </html>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou uma profissional dedicada à criação de soluções digitais inovadoras e criativas. Com expertise em desenvolvimento web e design, busco sempre entregar projetos que combinem funcionalidade e estética.</p>
+                    <p>Minha paixão por tecnologia me impulsiona a explorar novas ferramentas e técnicas, garantindo que meus projetos estejam sempre atualizados e relevantes.</p>
+                </div>
+                <div class="about-image">
+                    <img src="sua-imagem.jpg" alt="Cappuh">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="project-grid">
+                <div class="project-item">Projeto 1</div>
+                <div class="project-item">Projeto 2</div>
+                <div class="project-item">Projeto 3</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato para discutir seu próximo projeto!</p>
+            <a href="mailto:seuemail@exemplo.com" class="btn">Enviar Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cappuh | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
