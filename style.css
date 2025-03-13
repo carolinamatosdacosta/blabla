@@ -117,3 +117,86 @@ footer {
       opacity: 0;
   }
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.navbar {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ... (outros estilos da navbar) ... */
+
+.about {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about h1 {
+  color: #6a0dad;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  text-align: left;
+  max-width: 500px;
+}
+
+.about-image img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills h2 {
+  color: #6a0dad;
+  margin-bottom: 1rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skills li:hover {
+  transform: translateY(-3px);
+}
