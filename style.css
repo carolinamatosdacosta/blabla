@@ -177,3 +177,16 @@ footer {
       transform: scale(1);
   }
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6a0dad;
+  color: #fff;
+  background-image: 
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 100 100'><polygon points='50,15 80,90 20,90' fill='white' fill-opacity='0.05'/></svg>");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  background-attachment: fixed;
+}
